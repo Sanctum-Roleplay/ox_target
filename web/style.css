@@ -1,5 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700&display=swap");
 
+
+@font-face {
+  font-family: 'Envy CodeR';
+  src: url('fonts/EnvyCodeRNerdFont-Regular.ttf') format('truetype');
+}
+
 :root {
   --color-default: #cfd2da;
   --color-hover: white;
@@ -32,8 +38,9 @@ p {
 }
 
 .eye-hover {
-  fill: var(--color-default);
+  fill: #94e2d5;
 }
+
 
 #options-wrapper {
   position: absolute;
@@ -47,22 +54,23 @@ p {
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
-  font-family: "Nunito";
+  font-family: "Envy CodeR";
   background: linear-gradient(
     90deg,
     rgba(20, 20, 20, 0.7) 0%,
     rgba(20, 20, 20, 0.6) 66%,
     rgba(47, 48, 53, 0) 100%
   );
-  font-size: 11pt;
-  line-height: 22pt;
+  border-radius: 5px;
+  font-size: 15pt;
+  line-height: 50pt;
   vertical-align: middle;
-  margin: 2pt;
+  margin: 5pt;
   transition: 300ms;
   transform-origin: left top;
   scale: 1;
-  height: 22pt;
-  width: 150pt;
+  height: 25pt;
+  width: 200pt;
   top: 0;
 }
 
@@ -79,11 +87,13 @@ p {
 }
 
 .option-icon {
-  font-size: 12pt;
+  font-size: 15pt;
   line-height: 22pt;
   width: 14pt;
-  margin: 5pt;
-  color: var(--color-default);
+  margin: 7pt;
+  padding-left: 3px;
+  padding-right: 3.5px;
+  color: #94e2d5;
 }
 
 .option-label {
